@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroll {
+	animation: scroll_text 1s linear infinite;
+}
+
+@keyframes scroll_text {
+	0% {
+		-webkit-transform: translateY(0) rotate(90deg);
+		transform: translateY(0) rotate(90deg);
+	}
+	50% {
+		-webkit-transform: translateY(30px) rotate(90deg);
+		transform: translateY(30px) rotate(90deg);
+	}
+	25% {
+		-webkit-transform: translateY(15px) rotate(90deg);
+		transform: translateY(15px) rotate(90deg);
+	}
+	100% {
+		-webkit-transform: translateY(0) rotate(90deg);
+		transform: translateY(0) rotate(90deg);
+	}
+}
+.port:hover .soya {
+	transition: all 1s;
+	top: 0;
+}
