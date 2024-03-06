@@ -20,7 +20,7 @@ export default function Scills({ scill, bg }) {
 					{scill.map(item => (
 						<div data-aos='fade-up' data-aos-anchor-placement='bottom-bottom'>
 							<Link href={`scill/${item.node.text}`}>
-								<Box w={'120px'} h={'170px'} borderRadius={10} boxShadow={'lg'} bg={'#09f7d3'}>
+								<Box key={item.node.id} w={'120px'} h={'170px'} borderRadius={10} boxShadow={'lg'} bg={'#09f7d3'}>
 									<Box
 										w={'full'}
 										h={'170px'}
@@ -28,7 +28,6 @@ export default function Scills({ scill, bg }) {
 										justifyContent={'center'}
 										alignItems={'center'}
 										flexDirection={'column'}
-										key={item.node.id}
 									>
 										<Image w={'full'} h={'55%'} src={item.node.img.url} alt={item.node.text} title='decription' />
 										<Heading py={1} fontSize={'lg'} fontStyle={'italic'} fontWeight={'medium'} fontFamily={'sans-serif'}>

@@ -12,8 +12,18 @@ export default function ScillName({ param }) {
 	return (
 		<Box w={'full'} h={'100vh'} bg={'black'} zIndex={10}>
 			{scillItem.map(item => (
-				<Box w={'full'} display={'flex'} pt={9} justifyContent={'center'} position={'absolute'} top={20} left={0} color={'white'}>
-					<Card key={item.node.id} maxW='xl'>
+				<Box
+					key={item.node.id}
+					w={'full'}
+					display={'flex'}
+					pt={9}
+					justifyContent={'center'}
+					position={'absolute'}
+					top={20}
+					left={0}
+					color={'white'}
+				>
+					<Card maxW='xl'>
 						<CardBody>
 							<Image
 								w={'560px'}
