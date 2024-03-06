@@ -19,8 +19,8 @@ export default function Scills({ scill, bg }) {
 				<Flex w={'full'} gap={2} cursor={'pointer'} py={4}>
 					{scill.map(item => (
 						<div data-aos='fade-up' data-aos-anchor-placement='bottom-bottom'>
-							<Link href={`scill/${item.node.text}`}>
-								<Box key={item.node.id} w={'120px'} h={'170px'} borderRadius={10} boxShadow={'lg'} bg={'#09f7d3'}>
+							<Link href={`scill/${item.node.text}`} key={item.node.id}>
+								<Box w={'120px'} h={'170px'} borderRadius={10} boxShadow={'lg'} bg={'#09f7d3'}>
 									<Box
 										w={'full'}
 										h={'170px'}
