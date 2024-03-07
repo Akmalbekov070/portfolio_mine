@@ -1,6 +1,6 @@
-import { About } from '@/components';
+import { AboutPages } from '@/components';
 import React from 'react';
 
 export default function AboutPage() {
-	return <About />;
+	return <AboutPages />;
 }

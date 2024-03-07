@@ -23,7 +23,7 @@ export default function ScillName({ param }) {
 					left={0}
 					color={'white'}
 				>
-					<Card maxW='xl'>
+					<Card maxW='xl' bg={'transparent'}>
 						<CardBody>
 							<Image
 								w={'560px'}
@@ -32,7 +32,7 @@ export default function ScillName({ param }) {
 								alt='Green double couch with wooden legs'
 								borderRadius='lg'
 							/>
-							<Stack mt='6' spacing='3'>
+							<Stack mt='6' spacing='3' color={'white'}>
 								<Heading size='md'>{item.node.text}</Heading>
 								<Text>
 									This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who
