@@ -7,7 +7,7 @@ import { FaTelegram } from 'react-icons/fa';
 
 export default function SidebarLeft() {
 	return (
-		<Box position={'fixed'} top={'260px'} left={'10'}>
+		<Box position={'fixed'} top={'260px'} left={{ base: '2', xl: '10' }}>
 			<Flex flexDirection={'column'} alignItems={'center'} justifyContent={'center'} gap={2}>
 				<Link href={'/404'}>
 					<BsFacebook size={'32'} color='#09f7d3' />

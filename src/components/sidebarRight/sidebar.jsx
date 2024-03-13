@@ -6,7 +6,7 @@ import { BsInstagram } from 'react-icons/bs';
 
 export default function Sidebar() {
 	return (
-		<Box position={'fixed'} top={'260px'} right={'10'}>
+		<Box position={'fixed'} top={'260px'} right={{ base: '2', xl: '10' }}>
 			<Flex flexDirection={'column'} alignItems={'center'} justifyContent={'center'} gap={2}>
 				<Link href={'https://github.com/Akmalbekov070'}>
 					<BiLogoGithub size={'40'} color='#09f7d3' />

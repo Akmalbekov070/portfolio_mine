@@ -42,9 +42,11 @@ export default function Main({ hero, port, about, scill }) {
 				</Box>
 				<Portfolio port={port} bg={bg} />
 				<Education />
+			</Box> */}
+			<Box zIndex={50}>
 				<Sidebar />
 				<SidebarLeft />
-			</Box> */}
+			</Box>
 		</Box>
 	);
 }
