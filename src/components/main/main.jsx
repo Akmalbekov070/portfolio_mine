@@ -35,7 +35,7 @@ export default function Main({ hero, port, about, scill }) {
 					<Header {...bg} item={item.node} />
 				</Box>
 			))}
-			<Box w={'full'} px={'170px'}>
+			{/* <Box w={'full'} px={'170px'}>
 				<About about={about} bg={bg} />
 				<Box position={'relative'} left={'-50px'}>
 					<Scills scill={scill} bg={bg} />
@@ -44,7 +44,7 @@ export default function Main({ hero, port, about, scill }) {
 				<Education />
 				<Sidebar />
 				<SidebarLeft />
-			</Box>
+			</Box> */}
 		</Box>
 	);
 }

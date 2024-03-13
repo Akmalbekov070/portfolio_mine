@@ -1,9 +1,10 @@
 import React from 'react';
-import { Box, Button, HStack, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Button, HStack, Heading, Image, Menu, MenuButton, MenuItem, MenuList, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 import { BiSolidUserCircle } from 'react-icons/bi';
+import { RxHamburgerMenu } from 'react-icons/rx';
 
-const Menu = () => {
+const MenuPage = () => {
 	return (
 		<Box w={'full'} position={'fixed'} top={0} left={0} zIndex={50}>
 			<Box w={'full'} h={20} backdropFilter='blur(5px)'>
@@ -13,7 +14,7 @@ const Menu = () => {
 					alignItems={'center'}
 					justifyContent={'space-between'}
 					py={2}
-					px={'100px'}
+					px={{ base: '30px', sm: '20px', lg: '50px', xl: '100px' }}
 					position={'absolute'}
 				>
 					<Box w={'full'}>
@@ -27,7 +28,15 @@ const Menu = () => {
 						</Link>
 					</Box>
 
-					<HStack alignItems={'center'} gap={10} fontWeight={'80'} fontFamily={'cursive'} color={'white'} cursor={'pointer'}>
+					<HStack
+						display={{ base: 'none', lg: 'flex' }}
+						alignItems={'center'}
+						gap={10}
+						fontWeight={'80'}
+						fontFamily={'cursive'}
+						color={'white'}
+						cursor={'pointer'}
+					>
 						{/* {header.map(item => (
 								<Text key={item.node.id}>{item.node?.text}</Text>
 							))} */}
@@ -40,9 +49,21 @@ const Menu = () => {
 						<Link href={'/contact'}>
 							<Text>Contact</Text>
 						</Link>
-						<HStack>
-							<BiSolidUserCircle fontSize={'20px'} />
-						</HStack>
+					</HStack>
+					<Box display={{ base: 'flex', lg: 'none' }} alignItems={'center'} zIndex={50}>
+						<Menu>
+							<MenuButton aria-label='Options' variant='outline' color={'white'}>
+								<RxHamburgerMenu size={'28'} />
+							</MenuButton>
+							<MenuList>
+								<MenuItem>New Tab</MenuItem>
+								<MenuItem>New Window</MenuItem>
+								<MenuItem>Open Closed Tab</MenuItem>
+							</MenuList>
+						</Menu>
+					</Box>
+					<HStack pl={'20px'}>
+						<BiSolidUserCircle fontSize={'20px'} />
 					</HStack>
 				</Box>
 			</Box>
@@ -50,7 +71,7 @@ const Menu = () => {
 	);
 };
 
-export default Menu;
+export default MenuPage;
 
 // import { Box, Button, HStack, Heading, Image, Text } from '@chakra-ui/react';
 // import Link from 'next/link';

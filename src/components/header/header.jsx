@@ -10,9 +10,16 @@ export default function Header(props) {
 		<Box w={'full'} h={'100vh'} position={'relative'} pt={12}>
 			{/* <ParticilBg /> */}
 			<Box w={'full'} h={'full'} top={6} left={0} position={'absolute'} zIndex={0}>
-				<Image w={'full'} h={'full'} pl={'300px'} src={item.img.url} alt='Akmal Ahmadjonov img' />
+				<Image
+					w={'full'}
+					h={'full'}
+					objectFit={'cover'}
+					pl={{ base: '70px', sm: '90px', lg: '200px', xl: '300px' }}
+					src={item.img.url}
+					alt='Akmal Ahmadjonov img'
+				/>
 			</Box>
-			<Box w={'full'} h={'100vh'} position={'absolute'} px={'200px'} pt={'50px'}>
+			<Box w={'full'} h={'100vh'} position={'absolute'} px={{ sm: '80px', lg: '150px', xl: '200px' }} pt={'50px'}>
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'}>
 					{html}
 				</Text>
@@ -22,16 +29,25 @@ export default function Header(props) {
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={10} pt={3}>
 					{head}
 				</Text>
-				<Heading fontSize={54} w={'500px'} color={'white'} pl={12} fontFamily={'-moz-initial'} pt={2}>
+				<Text
+					fontSize={{ sm: 28, xl: 54 }}
+					w={{ xl: '500px' }}
+					display={'flex'}
+					flexWrap={'wrap'}
+					color={'white'}
+					pl={12}
+					fontFamily={'-moz-initial'}
+					pt={2}
+				>
 					{item.text}
-				</Heading>
+				</Text>
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={10} pt={2}>
 					{headClose}
 				</Text>{' '}
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={4} pt={2}>
 					{parag}
 				</Text>
-				<Text w={'400px'} color={'gray.400'} pl={12}>
+				<Text w={{ xl: '400px' }} color={'gray.400'} pl={12}>
 					{item.decs.slice(0, 90)}...
 				</Text>
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={4} pt={2}>
