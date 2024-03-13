@@ -19,7 +19,7 @@ export default function Header(props) {
 					alt='Akmal Ahmadjonov img'
 				/>
 			</Box>
-			<Box w={'full'} h={'100vh'} position={'absolute'} px={{ sm: '80px', lg: '150px', xl: '200px' }} pt={'50px'}>
+			<Box w={'full'} h={'100vh'} position={'absolute'} px={{ base: '10px', sm: '80px', lg: '150px', xl: '200px' }} pt={'50px'}>
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'}>
 					{html}
 				</Text>
@@ -30,7 +30,7 @@ export default function Header(props) {
 					{head}
 				</Text>
 				<Text
-					fontSize={{ sm: 28, xl: 54 }}
+					fontSize={{ base: 22, sm: 28, xl: 54 }}
 					w={{ xl: '500px' }}
 					display={'flex'}
 					flexWrap={'wrap'}

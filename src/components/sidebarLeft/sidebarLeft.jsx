@@ -14,7 +14,7 @@ export default function SidebarLeft() {
 				</Link>
 				<Box w={'1.5px'} h={16} bg={'#09f7d3'}></Box>
 				<Link href={'https://t.me/akmalbekov'}>
-					<FaTelegram size={'32'} color='#09f7d3' />
+					<FaTelegram size={'38'} color='#09f7d3' />
 				</Link>
 			</Flex>
 		</Box>
