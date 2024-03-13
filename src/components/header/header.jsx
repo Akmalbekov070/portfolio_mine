@@ -14,7 +14,7 @@ export default function Header(props) {
 					w={'full'}
 					h={'full'}
 					objectFit={'cover'}
-					pl={{ base: '70px', sm: '90px', lg: '200px', xl: '300px' }}
+					pl={{ base: '0px', sm: '90px', lg: '200px', xl: '300px' }}
 					src={item.img.url}
 					alt='Akmal Ahmadjonov img'
 				/>
@@ -57,7 +57,7 @@ export default function Header(props) {
 					{btn}
 				</Text>
 				<Link href={'/contact'}>
-					<Box w={'full'} ml={16} py={2}>
+					<Box ml={16} py={2}>
 						<Button cursor={'pointer'}>Contact Me</Button>
 					</Box>
 				</Link>
