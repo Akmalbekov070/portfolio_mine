@@ -47,7 +47,7 @@ export default function Header(props) {
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={4} pt={2}>
 					{parag}
 				</Text>
-				<Text w={{ xl: '400px' }} color={'gray.400'} pl={12}>
+				<Text w={{ xl: '400px' }} color={{ base: 'white', xl: 'gray.400' }} pl={12}>
 					{item.decs.slice(0, 90)}...
 				</Text>
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={4} pt={2}>
@@ -58,7 +58,9 @@ export default function Header(props) {
 				</Text>
 				<Link href={'/contact'}>
 					<Box ml={16} py={2}>
-						<Button cursor={'pointer'}>Contact Me</Button>
+						<Button bg={'transparent'} cursor={'pointer'} colorScheme={'blue'} color={'white'}>
+							Contact Me
+						</Button>
 					</Box>
 				</Link>
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={12} pt={2}>

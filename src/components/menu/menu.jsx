@@ -62,7 +62,7 @@ const MenuPage = () => {
 							</MenuList>
 						</Menu>
 					</Box>
-					<HStack pl={'20px'}>
+					<HStack color={'white'} pl={'20px'}>
 						<BiSolidUserCircle fontSize={'20px'} />
 					</HStack>
 				</Box>
