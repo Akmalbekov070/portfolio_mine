@@ -78,7 +78,7 @@ export default function About({ about, bg }) {
 						</Box>
 					))}
 					{/* text code */}
-					<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} pt={{ base: 3, lg: 6 }} pl={16}>
+					<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} pt={{ base: 3, lg: 6 }} pl={20}>
 						{bg.cardClose}
 					</Text>
 					<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} pt={{ base: 3, lg: 7 }} pl={10}>

@@ -16,7 +16,15 @@ export default function Scills({ scill, bg }) {
 				<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3} pl={7}>
 					{bg.cardItem}
 				</Text>
-				<Flex w={'full'} gap={2} cursor={'pointer'} py={4}>
+				<Flex
+					w={'full'}
+					gap={2}
+					flexWrap={{ base: 'wrap', xl: 'nowrap' }}
+					alignItems={'center'}
+					justifyContent={'center'}
+					cursor={'pointer'}
+					py={4}
+				>
 					{scill.map(item => (
 						<div key={item.node.id} data-aos='fade-up' data-aos-anchor-placement='bottom-bottom'>
 							<Link href={`scill/${item.node.text}`}>

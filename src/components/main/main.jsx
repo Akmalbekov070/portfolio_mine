@@ -37,11 +37,11 @@ export default function Main({ hero, port, about, scill }) {
 			))}
 			<Box w={'full'} px={{ sm: '30px', lg: '120px', xl: '170px' }}>
 				<About about={about} bg={bg} />
+				<Box position={'relative'} left={'-50px'}>
+					<Scills scill={scill} bg={bg} />
+				</Box>
 			</Box>
-			{/* <Box position={'relative'} left={'-50px'}>
-				<Scills scill={scill} bg={bg} />
-			</Box>
-			<Portfolio port={port} bg={bg} />
+			{/* <Portfolio port={port} bg={bg} />
 			<Education /> */}
 			<Box zIndex={50}>
 				<Sidebar />

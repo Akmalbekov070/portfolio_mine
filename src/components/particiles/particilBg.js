@@ -1,3 +1,5 @@
+'use client';
+import { Particle } from '@tsparticles/engine';
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
@@ -6,7 +8,6 @@ export default function ParticilBg() {
 	const particlesInit = useCallback(async engine => {
 		await loadFull(engine);
 	}, []);
-
 	const particlesLoad = useCallback(async () => {}, []);
 	return (
 		<Particles
@@ -21,7 +22,7 @@ export default function ParticilBg() {
 						value: '',
 					},
 				},
-				fpsLimit: 120,
+				fpsLimit: 130,
 				interactivity: {
 					events: {
 						onClick: {
