@@ -74,8 +74,8 @@ export default function Header(props) {
 				display={'flex'}
 				justifyContent={'space-between'}
 				color={'white'}
-				pr={5}
-				pl={5}
+				pr={{ xl: 5 }}
+				pl={{ xl: 5 }}
 			>
 				<Box display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
 					<Text transform={'rotate(90deg)'} className='scroll'>

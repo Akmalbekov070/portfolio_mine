@@ -35,14 +35,14 @@ export default function Main({ hero, port, about, scill }) {
 					<Header {...bg} item={item.node} />
 				</Box>
 			))}
-			{/* <Box w={'full'} px={'170px'}>
+			<Box w={'full'} px={{ sm: '30px', lg: '120px', xl: '170px' }}>
 				<About about={about} bg={bg} />
-				<Box position={'relative'} left={'-50px'}>
-					<Scills scill={scill} bg={bg} />
-				</Box>
-				<Portfolio port={port} bg={bg} />
-				<Education />
-			</Box> */}
+			</Box>
+			{/* <Box position={'relative'} left={'-50px'}>
+				<Scills scill={scill} bg={bg} />
+			</Box>
+			<Portfolio port={port} bg={bg} />
+			<Education /> */}
 			<Box zIndex={50}>
 				<Sidebar />
 				<SidebarLeft />
