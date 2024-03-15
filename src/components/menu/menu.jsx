@@ -56,9 +56,15 @@ const MenuPage = () => {
 								<RxHamburgerMenu size={'28'} />
 							</MenuButton>
 							<MenuList>
-								<MenuItem>New Tab</MenuItem>
-								<MenuItem>New Window</MenuItem>
-								<MenuItem>Open Closed Tab</MenuItem>
+								<MenuItem>
+									<Link href={'/'}>Home</Link>
+								</MenuItem>
+								<MenuItem>
+									<Link href={'/about'}>About</Link>
+								</MenuItem>
+								<MenuItem>
+									<Link href={'/contact'}>Contact</Link>
+								</MenuItem>
 							</MenuList>
 						</Menu>
 					</Box>
