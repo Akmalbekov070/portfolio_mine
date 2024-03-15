@@ -7,7 +7,7 @@ import ParticilBg from '../particiles/particilBg';
 export default function Header(props) {
 	const { html, body, head, head2, parag, htmlClose, bodyClose, headClose, head2Close, paragClose, btn, btnClose, item } = props;
 	return (
-		<Box w={'full'} h={'100vh'} position={'relative'} pt={12} zIndex={50}>
+		<Box w={'full'} h={'100vh'} position={'relative'} pt={12} zIndex={0}>
 			{/* <ParticilBg /> */}
 			<Box w={'full'} h={'full'} top={6} left={0} position={'absolute'} zIndex={0}>
 				<Image

@@ -43,7 +43,7 @@ export default function Main({ hero, port, about, scill }) {
 			</Box>
 			{/* <Portfolio port={port} bg={bg} />
 			<Education /> */}
-			<Box zIndex={50}>
+			<Box zIndex={10}>
 				<Sidebar />
 				<SidebarLeft />
 			</Box>
