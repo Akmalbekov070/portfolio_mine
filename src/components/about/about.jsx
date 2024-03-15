@@ -55,7 +55,7 @@ export default function About({ about, bg }) {
 									position={'absolute'}
 								/>
 								<Box
-									w={{ base: '250px', lg: '400px' }}
+									w={{ base: '250px', sm: '400px' }}
 									h={'440px'}
 									bg={'blackAlpha.500'}
 									position={'relative'}

@@ -7,13 +7,20 @@ export default function Scills({ scill, bg }) {
 	return (
 		<div data-aos='fade-up' data-aos-anchor-placement='top-center'>
 			<Box w={'full'}>
-				<Heading color={'#09f7d3'} fontSize={'5xl'} fontFamily={'initial'} position={'relative'} left={'-30px'} py={6}>
+				<Heading
+					color={'#09f7d3'}
+					fontSize={'5xl'}
+					fontFamily={'initial'}
+					position={'relative'}
+					left={{ base: '50px', xl: '-30px' }}
+					py={6}
+				>
 					Scills
 				</Heading>
-				<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3}>
+				<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3} pl={{ base: '60px' }}>
 					{bg.card}
 				</Text>
-				<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3} pl={7}>
+				<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3} pl={{ base: '80px', xl: 7 }}>
 					{bg.cardItem}
 				</Text>
 				<Flex
@@ -24,6 +31,7 @@ export default function Scills({ scill, bg }) {
 					justifyContent={'center'}
 					cursor={'pointer'}
 					py={4}
+					pl={{ base: '90px' }}
 				>
 					{scill.map(item => (
 						<div key={item.node.id} data-aos='fade-up' data-aos-anchor-placement='bottom-bottom'>
@@ -47,10 +55,10 @@ export default function Scills({ scill, bg }) {
 						</div>
 					))}
 				</Flex>
-				<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3} pl={7}>
+				<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3} pl={{ base: '80px', xl: 7 }}>
 					{bg.cardItemClose}
 				</Text>
-				<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3}>
+				<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3} pl={{ base: '60px' }}>
 					{bg.cardClose}
 				</Text>
 			</Box>
