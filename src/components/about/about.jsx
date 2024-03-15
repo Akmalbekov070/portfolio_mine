@@ -13,7 +13,7 @@ export default function About({ about, bg }) {
 						fontSize={'5xl'}
 						fontFamily={'initial'}
 						position={'relative'}
-						left={{ base: '-30', xl: '-130px' }}
+						left={{ base: '-45px', xl: '-130px' }}
 						py={3}
 					>
 						<div data-aos='fade-up' data-aos-anchor-placement='top-center'>
