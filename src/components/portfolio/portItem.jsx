@@ -14,7 +14,7 @@ export default function PortfolioItems({ param }) {
 			{scillItem.map(item => (
 				<Box key={item.node.id} color={'white'}>
 					<HStack position={'relative'} overflow={'hidden'} className='port' transition={' 1s all'}>
-						<Image w={'full'} h={'500px'} objectFit={'cover'} src={item.node.img.url} alt='akmal' />
+						<Image w={'full'} h={{ base: '300px', lg: '500px' }} objectFit={'cover'} src={item.node.img.url} alt='akmal' />
 						<Box
 							className='soya'
 							w={'full'}
