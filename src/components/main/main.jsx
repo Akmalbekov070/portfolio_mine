@@ -40,9 +40,9 @@ export default function Main({ hero, port, about, scill }) {
 				<Box position={'relative'} left={'-50px'}>
 					<Scills scill={scill} bg={bg} />
 				</Box>
+				<Portfolio port={port} bg={bg} />
 			</Box>
-			{/* <Portfolio port={port} bg={bg} />
-			<Education /> */}
+			{/* <Education /> */}
 			<Box zIndex={10}>
 				<Sidebar />
 				<SidebarLeft />

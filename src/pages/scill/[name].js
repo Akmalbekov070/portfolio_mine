@@ -4,6 +4,5 @@ import React from 'react';
 
 export default function ScillItem() {
 	const param = useParams();
-	console.log(param);
 	return <ScillName param={param} />;
 }
