@@ -45,6 +45,7 @@ export const getPorfolio = async () => {
 			portfoliosConnection {
 				edges {
 					node {
+						decs
 						text
 						img {
 							url
