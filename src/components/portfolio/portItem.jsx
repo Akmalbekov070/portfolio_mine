@@ -8,7 +8,6 @@ export default function PortfolioItems({ param }) {
 		getPorfolio().then(res => setScillDetail(res));
 	}, []);
 	const scillItem = scillDetail.filter(item => item.node.text === param.name);
-	console.log(scillItem);
 	return (
 		<Box w={'full'} h={'100vh'} bg={'black'} pt={32} px={{ base: 4, lg: 10 }}>
 			{scillItem.map(item => (

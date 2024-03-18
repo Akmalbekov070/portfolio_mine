@@ -1,9 +1,10 @@
 import { Box } from '@chakra-ui/react';
 import React from 'react';
-import { About, Header, Portfolio, Scills } from '@/components';
+import { About, AboutPages, Header, Portfolio, Scills } from '@/components';
 import Sidebar from '../sidebarRight/sidebar';
 import SidebarLeft from '../sidebarLeft/sidebarLeft';
 import Education from '../Education/education';
+import AboutPage from '@/pages/about';
 
 export default function Main({ hero, port, about, scill }) {
 	const bg = {

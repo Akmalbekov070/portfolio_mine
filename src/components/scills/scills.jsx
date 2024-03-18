@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React from 'react';
 
 export default function Scills({ scill, bg }) {
-	console.log(bg);
 	return (
 		<div data-aos='fade-up' data-aos-anchor-placement='top-center'>
 			<Box w={'full'}>

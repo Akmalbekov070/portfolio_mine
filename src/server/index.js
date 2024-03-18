@@ -98,3 +98,23 @@ export const getScill = async () => {
 	const result = await request(grahqlAPI, query);
 	return result.scillsConnection.edges;
 };
+export const getAbaoutPage = async () => {
+	const query = gql`
+		query Assets {
+			aboutpageConnection {
+				edges {
+					node {
+						text
+						desc
+						img {
+							url
+						}
+						id
+					}
+				}
+			}
+		}
+	`;
+	const result = await request(grahqlAPI, query);
+	return result.aboutpageConnection.edges;
+};

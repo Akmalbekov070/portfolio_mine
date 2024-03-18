@@ -1,6 +1,6 @@
 import Main from '@/components/main/main';
 import MenuPage from '@/components/menu/menu';
-import { getAbout, getHeaders, getHero, getPorfolio, getScill } from '@/server';
+import { getAbaoutPage, getAbout, getHeaders, getHero, getPorfolio, getScill } from '@/server';
 import { Box } from '@chakra-ui/react';
 export default function Home({ header, hero, port, about, scill }) {
 	return (
