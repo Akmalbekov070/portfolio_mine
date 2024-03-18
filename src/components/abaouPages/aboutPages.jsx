@@ -24,11 +24,11 @@ export default function AboutPages() {
 				<Text color={'gray.400'} fontSize={'lg'}>
 					I enrolled in a frontend course in 2021 due to my interest in WEB PROGRAMMING and completed the frontend course in 1
 					year. During this time, I prepared many sites and a portfolio for myself, and since I have not yet become such a perfect
-					developer, I am still online for other courses. I participated Don't think why this year is the same mistake. During
-					this year, I spend 3-4 months for my programs and practice, and because of this time, I became a skilled web developer
-					2015 - 2017 during this year I got interested in backend because of my interest in full stack developers and manso in
-					less than 1 year I learned backend how to connect frontend and backend working with databases and many things I learned
-					many new libraries and programs
+					developer, I am still online for other courses. I participated Dont think why this year is the same mistake. During this
+					year, I spend 3-4 months for my programs and practice, and because of this time, I became a skilled web developer 2015
+					2017 during this year I got interested in backend because of my interest in full stack developers and manso in less than
+					1 year I learned backend how to connect frontend and backend working with databases and many things I learned many new
+					libraries and programs
 				</Text>
 			</Box>
 		</Box>
