@@ -5,9 +5,9 @@ export default function AboutPages() {
 	return (
 		<Box
 			w={'full'}
-			h={{ base: '140vh', sm: '100vh' }}
+			h={{ base: '125vh', sm: '100vh' }}
 			bg={'black'}
-			pt={{ base: '40px', lg: '50px' }}
+			pt={{ base: '50px', lg: '50px' }}
 			display={'flex'}
 			flexDirection={'column'}
 			justifyContent={'center'}
@@ -16,7 +16,7 @@ export default function AboutPages() {
 			<Heading color={'#09f7d3'} fontSize={'5xl'} fontFamily={'initial'} position={'relative'} left={0} py={5}>
 				About me
 			</Heading>
-			<Box w={{ base: 'full', lg: '800px' }} h={{ base: '550px', sm: '480px', lg: '350px' }} border={'1px'} py={6} px={6}>
+			<Box w={{ base: 'full', lg: '800px' }} h={{ base: 'full', sm: '480px', lg: '350px' }} border={'1px'} py={6} px={6}>
 				<Text color={'white'} fontSize={'lg'}>
 					Hello, my name is Akmal, I am 16 years old and I am a frontend developer. I have been working in this field for more
 					than 1.5 years
