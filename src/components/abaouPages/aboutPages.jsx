@@ -1,7 +1,13 @@
+import { getAbaoutPage } from '@/server';
 import { Box, Heading, Text } from '@chakra-ui/react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function AboutPages() {
+	const [scillDetail, setScillDetail] = useState([]);
+	useEffect(() => {
+		getAbaoutPage().then(res => setScillDetail(res));
+	}, []);
+	console.log(scillDetail);
 	return (
 		<Box
 			w={'full'}
