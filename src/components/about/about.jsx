@@ -44,10 +44,10 @@ export default function About({ about, bg }) {
 							py={5}
 							borderRadius={10}
 						>
-							<Box w={'full'} display={'flex'} flexDirection={'column'} alignItems={'center'}>
+							<Box w={'full'} display={'flex'} flexDirection={'column'} alignItems={'center'} pt={{ base: 10 }}>
 								<Image
-									w={{ base: '250px', sm: '400px', lg: '400px' }}
-									h={{ base: '400px', sm: '440px', lg: '440px' }}
+									w={{ base: '300px', sm: '400px', lg: '400px' }}
+									h={{ base: '350px', sm: '440px', lg: '440px' }}
 									objectFit={{ lg: 'cover' }}
 									borderRadius={16}
 									src={item.node.img.url}
@@ -55,7 +55,7 @@ export default function About({ about, bg }) {
 									position={'absolute'}
 								/>
 								<Box
-									w={{ base: '250px', sm: '400px' }}
+									w={{ base: '300px', sm: '400px' }}
 									h={'440px'}
 									bg={'blackAlpha.500'}
 									position={'relative'}
