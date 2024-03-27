@@ -104,8 +104,6 @@ export const getAbaoutPage = async () => {
 			aboutpageConnection {
 				edges {
 					node {
-						text
-						desc
 						img {
 							url
 						}
