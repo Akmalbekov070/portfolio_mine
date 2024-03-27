@@ -1,8 +1,9 @@
+import { AboutPages } from '@/components';
 import Main from '@/components/main/main';
 import MenuPage from '@/components/menu/menu';
 import { getAbaoutPage, getAbout, getHeaders, getHero, getPorfolio, getScill } from '@/server';
 import { Box } from '@chakra-ui/react';
-export default function Home({ header, hero, port, about, scill }) {
+export default function Home({ header, hero, port, about, scill, AboutPage }) {
 	return (
 		<Box>
 			<MenuPage header={header} />
@@ -18,8 +19,9 @@ export async function getStaticProps() {
 	const port = (await getPorfolio()) || [];
 	const about = (await getAbout()) || [];
 	const scill = (await getScill()) || [];
+	const AboutPage = (await getAbaoutPage()) || [];
 
 	return {
-		props: { header, hero, port, about, scill },
+		props: { header, hero, port, about, scill, AboutPage },
 	};
 }
