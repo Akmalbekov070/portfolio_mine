@@ -44,7 +44,7 @@ export default function About({ about, bg }) {
 							py={5}
 							borderRadius={10}
 						>
-							<Box w={'full'} display={'flex'} flexDirection={'column'} alignItems={'center'} pt={{ base: 10 }}>
+							<Box w={'full'} display={'flex'} flexDirection={'column'} alignItems={'center'} pt={{ base: 10, lg: '0px' }}>
 								<Image
 									w={{ base: '300px', sm: '400px', lg: '400px' }}
 									h={{ base: '350px', sm: '440px', lg: '440px' }}
