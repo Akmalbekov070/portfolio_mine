@@ -53,6 +53,7 @@ export default function AboutPages() {
 					px={{ base: 2, xl: 24 }}
 					py={{ base: 5, xl: 0 }}
 					border={'1px'}
+					gap={10}
 				>
 					<Box w={{ base: 'full', xl: '35%' }}>
 						<Carousel responsive={responsive}>
@@ -69,7 +70,7 @@ export default function AboutPages() {
 							))}
 						</Carousel>
 					</Box>
-					<Box w={{ basae: 'full', xl: '60%' }}>
+					<Box w={{ basae: 'full', xl: '60%' }} pl={{ base: '0px', xl: 10 }}>
 						<Text fontFamily={'sans-serif'} fontSize={'lg'} pt={{ base: 5, xl: 0 }} color={'white'}>
 							Hello, my name is Akmal, I am 16 years old and I am a frontend developer. I have been working in this field for more
 							than 1.5 years my hobby is play football
