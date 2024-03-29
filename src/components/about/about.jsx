@@ -1,8 +1,10 @@
 import { Box, Heading, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import MenuPage from '../menu/menu';
+import Aos from 'aos';
 
 export default function About({ about, bg }) {
+	Aos.init();
 	return (
 		<Box>
 			<MenuPage />
