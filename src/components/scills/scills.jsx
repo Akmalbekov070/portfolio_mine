@@ -1,8 +1,10 @@
 import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react';
+import Aos from 'aos';
 import Link from 'next/link';
 import React from 'react';
 
 export default function Scills({ scill, bg }) {
+	Aos.init();
 	return (
 		<div data-aos='fade-up' data-aos-anchor-placement='top-center'>
 			<Box w={'full'}>

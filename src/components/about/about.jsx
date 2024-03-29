@@ -18,9 +18,7 @@ export default function About({ about, bg }) {
 						left={{ base: '-45px', xl: '-130px' }}
 						py={3}
 					>
-						<div data-aos='fade-up' data-aos-anchor-placement='top-center'>
-							About me
-						</div>
+						<div data-aos='zoom-in-down'>About me</div>
 					</Heading>
 					{/* text code 1 */}
 					<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} pt={{ base: 3, lg: 6 }}>
