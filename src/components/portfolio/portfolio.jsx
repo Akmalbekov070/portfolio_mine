@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export default function Portfolio({ port, bg }) {
+	console.log(port);
 	return (
 		<Box>
 			<Heading color={'#09f7d3'} fontSize={'5xl'} px={0} py={10}>

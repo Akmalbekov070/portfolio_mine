@@ -47,6 +47,7 @@ export const getPorfolio = async () => {
 					node {
 						decs
 						text
+						nowDesc
 						img {
 							url
 						}
