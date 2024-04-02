@@ -55,7 +55,7 @@ export default function PortfolioItems({ param }) {
 						</Box>
 					</HStack>
 					<Box textAlign={'center'} pt={3}>
-						<Link href={''}>
+						<Link href={`${item.node.nowDesc}`}>
 							<Button
 								bg={'transparent'}
 								colorScheme={'blue'}
