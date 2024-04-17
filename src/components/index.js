@@ -7,3 +7,4 @@ export { default as Contact } from './contact/contact';
 export { default as Scills } from './scills/scills';
 export { default as Header } from './header/header';
 export { default as AboutPages } from './abaouPages/aboutPages';
+export { default as NewsPage } from './NewsPage/newsPage';

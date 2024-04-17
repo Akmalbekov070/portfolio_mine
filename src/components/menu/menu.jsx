@@ -49,6 +49,9 @@ const MenuPage = () => {
 						<Link href={'/contact'}>
 							<Text>Contact</Text>
 						</Link>
+						<Link href={'/newspagePath'}>
+							<Text>News</Text>
+						</Link>
 					</HStack>
 					<Box display={{ base: 'flex', lg: 'none' }} alignItems={'center'} zIndex={50}>
 						<Menu>
