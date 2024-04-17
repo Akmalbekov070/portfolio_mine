@@ -68,6 +68,11 @@ const MenuPage = () => {
 								<MenuItem>
 									<Link href={'/contact'}>Contact</Link>
 								</MenuItem>
+								<MenuItem>
+									<Link href={'/newspagePath'}>
+										<Text>News</Text>
+									</Link>
+								</MenuItem>
 							</MenuList>
 						</Menu>
 					</Box>
