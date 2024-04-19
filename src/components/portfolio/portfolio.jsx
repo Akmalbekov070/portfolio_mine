@@ -6,13 +6,16 @@ export default function Portfolio({ port, bg }) {
 	console.log(port);
 	return (
 		<Box>
-			<Heading color={'#09f7d3'} fontSize={'5xl'} px={0} py={10}>
+			<Heading color={'#09f7d3'} fontSize={'5xl'} py={10} pl={{ base: '-45px', xl: '100px' }}>
 				Portfolio
 			</Heading>
-			<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3} pl={6}>
+			<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={1} pl={'130px'}>
+				{bg.box}
+			</Text>
+			<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={5} pl={'200px'}>
 				{bg.image}
 			</Text>
-			<Grid w={'full'} display={'flex'} flexWrap={{ base: 'wrap', lg: 'nowrap' }} justifyContent={'space-between'} gap={6} px={6}>
+			<Grid display={'flex'} flexWrap={{ base: 'wrap', lg: 'nowrap' }} justifyContent={'space-between'} gap={6} px={6}>
 				{port.map(el => (
 					<Box w={'full'} key={el.node.id}>
 						<Link href={`/port/${el.node.text}`}>
@@ -46,8 +49,11 @@ export default function Portfolio({ port, bg }) {
 					</Box>
 				))}
 			</Grid>
-			<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={3} pl={6}>
+			<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={5} pl={'200px'}>
 				{bg.imageClose}
+			</Text>
+			<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={1} pl={'130px'}>
+				{bg.boxClose}
 			</Text>
 		</Box>
 	);
