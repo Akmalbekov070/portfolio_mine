@@ -13,14 +13,24 @@ export default function Header(props) {
 			{/* <ParticilBg /> */}
 			<Box w={'full'} h={'full'} top={6} left={0} position={'absolute'} zIndex={0}>
 				<Image
+					position={'relative'}
 					h={'100vh'}
 					pt={4}
 					objectFit={'cover'}
-					pl={{ base: '0px', sm: '90px', lg: '200px', xl: '700px' }}
+					pl={{ base: '0px', sm: '90px', lg: '600px', xl: '700px' }}
 					src={item.image.url}
 					alt='Akmal Ahmadjonov img'
 				/>
 			</Box>
+			<Box
+				w={'full'}
+				h={'110vh'}
+				display={{ base: 'flex', lg: 'none' }}
+				bg={'blackAlpha.600'}
+				position={'absolute'}
+				top={0}
+				left={0}
+			></Box>
 			<Box w={'full'} h={'100vh'} position={'absolute'} px={{ base: '10px', sm: '80px', lg: '150px', xl: '200px' }} pt={'50px'}>
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'}>
 					{html}
