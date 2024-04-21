@@ -13,6 +13,7 @@ export default function Header(props) {
 			{/* <ParticilBg /> */}
 			<Box w={'full'} h={'full'} top={6} left={0} position={'absolute'} zIndex={0}>
 				<Image
+					h={'100vh'}
 					pt={4}
 					objectFit={'cover'}
 					pl={{ base: '0px', sm: '90px', lg: '200px', xl: '700px' }}
