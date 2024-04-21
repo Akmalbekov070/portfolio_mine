@@ -26,6 +26,9 @@ export const getHero = async () => {
 					node {
 						id
 						decs
+						image {
+							url
+						}
 						img {
 							url
 						}
