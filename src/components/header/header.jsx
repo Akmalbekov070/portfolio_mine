@@ -26,7 +26,7 @@ export default function Header(props) {
 				w={'full'}
 				h={'110vh'}
 				display={{ base: 'flex', lg: 'none' }}
-				bg={'blackAlpha.600'}
+				bg={'blackAlpha.500'}
 				position={'absolute'}
 				top={0}
 				left={0}
