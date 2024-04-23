@@ -72,8 +72,8 @@ export default function AboutPages() {
 					</Box>
 					<Box w={{ basae: 'full', xl: '60%' }} pl={{ base: '0px', xl: 10 }}>
 						<Text fontFamily={'sans-serif'} fontSize={'lg'} pt={{ base: 5, xl: 0 }} color={'white'}>
-							Hello, my name is Akmal, I am 16 years old and I am a frontend developer. I have been working in this field for more
-							than 1.5 years my hobby is play football
+							Hello, my name is Akmal, I am 17 years old and I am a frontend developer. I have been working in this field for more
+							than 2 years my hobby is play football
 						</Text>
 						<Text fontFamily={'sans-serif'} fontSize={'lg'} color={'gray.400'} pt={2}>
 							I enrolled in a frontend course in 2021 due to my interest in WEB PROGRAMMING and completed the frontend course in 1
