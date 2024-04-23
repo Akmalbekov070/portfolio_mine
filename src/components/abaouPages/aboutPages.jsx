@@ -46,7 +46,6 @@ export default function AboutPages() {
 				</Heading>
 				<Box
 					w={'full'}
-					h={{ base: 'full', sm: 'full' }}
 					display={{ base: 'block', xl: 'flex' }}
 					justifyContent={{ base: 'center', xl: 'space-between' }}
 					alignItems={'center'}
@@ -58,7 +57,7 @@ export default function AboutPages() {
 					<Box w={{ base: 'full', xl: '35%' }}>
 						<Carousel responsive={responsive}>
 							{scillDetail.map(item => (
-								<Box w={'full'} key={item.node.id}>
+								<Box w={'full'} key={item.node.id} py={6}>
 									<Image
 										w={'full'}
 										h={{ base: '300px', sm: '60vh', lg: '80vh', xl: '500px' }}
@@ -86,6 +85,14 @@ export default function AboutPages() {
 						</Text>
 					</Box>
 				</Box>
+				{/* rezumen img */}
+				{/* <Box>
+					<Image src='' alt='rezumen img' />
+				</Box> */}
+				{/* Sertification img */}
+				{/* <Box>
+					<Image src='' alt='Sertification img' />
+				</Box> */}
 			</Box>
 		</>
 	);
