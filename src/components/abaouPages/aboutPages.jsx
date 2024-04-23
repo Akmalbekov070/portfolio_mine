@@ -86,7 +86,6 @@ export default function AboutPages() {
 						</Text>
 					</Box>
 				</Box>
-				<Contact />
 			</Box>
 		</>
 	);
