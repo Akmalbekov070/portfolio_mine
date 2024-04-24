@@ -86,7 +86,7 @@ export default function AboutPages() {
 					</Box>
 				</Box>
 				{/* rezumen img */}
-				<Box w={'full'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+				<Box w={'full'} display={{ base: 'blok', xl: 'flex' }} justifyContent={'space-between'} alignItems={'center'}>
 					<Box>
 						<Heading
 							color={'#09f7d3'}
@@ -101,7 +101,7 @@ export default function AboutPages() {
 						</Heading>
 						<Box w={'full'} display={'flex'} py={5}>
 							<Image
-								w={{ base: 'full', xl: '78%' }}
+								w={{ base: 'full', xl: '80%' }}
 								h={'full'}
 								src='https://i.postimg.cc/4dH9Hkw6/web-developer.png'
 								alt='rezumen img'
@@ -119,14 +119,14 @@ export default function AboutPages() {
 							pt={10}
 							py={5}
 						>
-							My Rezumen
+							My Certificate
 						</Heading>
-						<Box w={'full'} display={'flex'} py={5}>
+						<Box w={'full'} py={5}>
 							<Image
-								w={{ base: 'full', xl: '78%' }}
+								w={{ base: 'full', xl: '80%' }}
 								h={'full'}
-								src='https://i.postimg.cc/4dH9Hkw6/web-developer.png'
-								alt='rezumen img'
+								src='https://i.postimg.cc/ncgNqvHq/photo-2024-04-24-23-14-25.jpg'
+								alt='certification img'
 								objectFit={'cover'}
 							/>
 						</Box>
