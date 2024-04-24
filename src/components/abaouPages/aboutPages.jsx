@@ -86,26 +86,50 @@ export default function AboutPages() {
 					</Box>
 				</Box>
 				{/* rezumen img */}
-				<Box>
-					<Heading
-						color={'#09f7d3'}
-						fontSize={'5xl'}
-						fontFamily={'initial'}
-						position={'relative'}
-						pl={{ base: '-45px', xl: '10px' }}
-						pt={10}
-						py={5}
-					>
-						My Rezumen
-					</Heading>
-					<Box w={'full'} display={'flex'} justifyContent={'center'} py={5}>
-						<Image
-							w={{ base: 'full', xl: '60%' }}
-							h={'full'}
-							src='https://i.postimg.cc/4dH9Hkw6/web-developer.png'
-							alt='rezumen img'
-							objectFit={'cover'}
-						/>
+				<Box w={'full'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+					<Box>
+						<Heading
+							color={'#09f7d3'}
+							fontSize={'5xl'}
+							fontFamily={'initial'}
+							position={'relative'}
+							pl={{ base: '-45px', xl: '10px' }}
+							pt={10}
+							py={5}
+						>
+							My Rezumen
+						</Heading>
+						<Box w={'full'} display={'flex'} py={5}>
+							<Image
+								w={{ base: 'full', xl: '78%' }}
+								h={'full'}
+								src='https://i.postimg.cc/4dH9Hkw6/web-developer.png'
+								alt='rezumen img'
+								objectFit={'cover'}
+							/>
+						</Box>
+					</Box>
+					<Box>
+						<Heading
+							color={'#09f7d3'}
+							fontSize={'5xl'}
+							fontFamily={'initial'}
+							position={'relative'}
+							pl={{ base: '-45px', xl: '10px' }}
+							pt={10}
+							py={5}
+						>
+							My Rezumen
+						</Heading>
+						<Box w={'full'} display={'flex'} py={5}>
+							<Image
+								w={{ base: 'full', xl: '78%' }}
+								h={'full'}
+								src='https://i.postimg.cc/4dH9Hkw6/web-developer.png'
+								alt='rezumen img'
+								objectFit={'cover'}
+							/>
+						</Box>
 					</Box>
 				</Box>
 				{/* Sertification img */}
