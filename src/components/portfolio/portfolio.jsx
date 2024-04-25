@@ -9,10 +9,24 @@ export default function Portfolio({ port, bg }) {
 			<Heading color={'#09f7d3'} fontSize={'5xl'} py={10} pl={{ base: '-45px', xl: '100px' }}>
 				Portfolio
 			</Heading>
-			<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={1} pl={'130px'}>
+			<Text
+				color={'gray.500'}
+				fontSize={'2xl'}
+				fontWeight={'300'}
+				fontFamily={'italic'}
+				py={1}
+				pl={{ base: '40px', xl: '130px' }}
+			>
 				{bg.box}
 			</Text>
-			<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={5} pl={'200px'}>
+			<Text
+				color={'gray.500'}
+				fontSize={'2xl'}
+				fontWeight={'300'}
+				fontFamily={'italic'}
+				py={5}
+				pl={{ base: '80px', xl: '200px' }}
+			>
 				{bg.image}
 			</Text>
 			<Grid display={'flex'} flexWrap={{ base: 'wrap', lg: 'nowrap' }} justifyContent={'space-between'} gap={6} px={6}>
@@ -49,11 +63,25 @@ export default function Portfolio({ port, bg }) {
 					</Box>
 				))}
 			</Grid>
-			<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={5} pl={'200px'}>
-				{bg.imageClose}
+			<Text
+				color={'gray.500'}
+				fontSize={'2xl'}
+				fontWeight={'300'}
+				fontFamily={'italic'}
+				py={5}
+				pl={{ base: '80px', xl: '200px' }}
+			>
+				{bg.image}
 			</Text>
-			<Text color={'gray.500'} fontSize={'2xl'} fontWeight={'300'} fontFamily={'italic'} py={1} pl={'130px'}>
-				{bg.boxClose}
+			<Text
+				color={'gray.500'}
+				fontSize={'2xl'}
+				fontWeight={'300'}
+				fontFamily={'italic'}
+				py={1}
+				pl={{ base: '40px', xl: '130px' }}
+			>
+				{bg.box}
 			</Text>
 		</Box>
 	);
