@@ -9,7 +9,7 @@ export default function PortfolioItems({ param }) {
 	}, []);
 	const scillItem = scillDetail.filter(item => item.node.text === param.name);
 	return (
-		<Box w={'full'} h={'100vh'} bg={'black'} pt={32} px={{ base: 4, lg: 10 }}>
+		<Box w={'full'} h={{ base: '100vh', lg: '110vh' }} bg={'black'} pt={32} px={{ base: 4, lg: 10 }}>
 			{scillItem.map(item => (
 				<Box key={item.node.id} color={'white'}>
 					<HStack
@@ -51,19 +51,20 @@ export default function PortfolioItems({ param }) {
 							</Heading>
 						</Box>
 						<Box py={6} w={{ base: 'full', lg: '40%' }}>
-							<Text>{item.node.decs}</Text>
+							<Text fontSize={{ base: '', xl: 'xl' }}>{item.node.decs}</Text>
 						</Box>
 					</HStack>
-					<Box textAlign={'center'} pt={3}>
+					<Box textAlign={'center'} pt={8}>
 						<Link href={`${item.node.nowDesc}`}>
 							<Button
 								bg={'transparent'}
 								colorScheme={'blue'}
 								px={10}
-								py={6}
+								py={{ base: 6, lg: 8 }}
 								border={'2px'}
 								borderColor={'blue'}
 								fontSize={'25px'}
+								color={'white'}
 							>
 								View the site
 							</Button>
