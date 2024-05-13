@@ -3,10 +3,8 @@ import React from 'react';
 
 const Footer = () => {
 	return (
-		<Box w={'full'} bg={('blackAlpha.500', 'whiteAlpha.100')} zIndex={50}>
-			<Box w={'full'} h={20}>
-				aa
-			</Box>
+		<Box w={'full'} h={20} bg={'blackAlpha.700'} zIndex={50}>
+			<Box w={'full'}>aa</Box>
 		</Box>
 	);
 };
