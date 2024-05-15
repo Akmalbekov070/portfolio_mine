@@ -3,9 +3,6 @@ import React from 'react';
 import { About, AboutPages, Header, Portfolio, Scills } from '@/components';
 import Sidebar from '../sidebarRight/sidebar';
 import SidebarLeft from '../sidebarLeft/sidebarLeft';
-import Education from '../Education/education';
-import AboutPage from '@/pages/about';
-import Footer from '../footer/footer';
 
 export default function Main({ hero, port, about, scill }) {
 	const bg = {
