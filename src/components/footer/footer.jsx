@@ -1,6 +1,7 @@
-import { Box, Image, Text } from '@chakra-ui/react';
+import { Box, HStack, Image, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
+import { TbCircleLetterC } from 'react-icons/tb';
 
 const Footer = () => {
 	return (
@@ -27,7 +28,10 @@ const Footer = () => {
 					Akhmedov.coder
 				</Text>
 			</Box>
-			<Box>s</Box>
+			<HStack w={'full'} alignItems={'center'} justifyContent={'end'}>
+				<TbCircleLetterC />
+				<Text>Akhmedov.coder 2023 Barcha huquqlari himoyalangan.</Text>
+			</HStack>
 		</Box>
 	);
 };
