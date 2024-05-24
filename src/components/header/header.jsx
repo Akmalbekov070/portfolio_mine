@@ -69,7 +69,7 @@ export default function Header(props) {
 				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={12} pt={2}>
 					{btn}
 				</Text>
-				<Link href={'/contact'}>
+				<Link href={'/contactMe'}>
 					<Box ml={16} py={2}>
 						<Button bg={'transparent'} cursor={'pointer'} colorScheme={'blue'} color={'white'}>
 							Contact Me
