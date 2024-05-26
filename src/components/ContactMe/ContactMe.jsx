@@ -38,11 +38,11 @@ export default function ContactMe() {
 			pt={24}
 			gap={3}
 		>
-			<form onSubmit={handleSubmit(onSubmit)}>
+			<form onSubmit={handleSubmit(onSubmit)} className='mx-4'>
 				<Input placeholder='write your name' {...register('username')} className={'w-[400px] bg-slate-700'} />
 				<div>{errors.username && <p className=' text-xl text-red-700 py-2'>{errors.username.message}</p>}</div>
 
-				<Input placeholder='write your phone number' {...register('phone')} className={'w-[400px] bg-slate-700'} />
+				<Input placeholder='write your phone number' {...register('phone')} className={'w-[400px] bg-slate-700 my-4'} />
 				<div>{errors.username && <p className=' text-xl text-red-700 py-2'>{errors.username.message}</p>}</div>
 				<div>
 					<Textarea {...register('message')} className={'w-[400px] bg-slate-700'} />
