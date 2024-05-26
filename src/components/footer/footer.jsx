@@ -11,7 +11,7 @@ const Footer = () => {
 			display={'flex'}
 			alignItems={'center'}
 			justifyContent={'space-between'}
-			bg={'black'}
+			bg={'blackAlpha.800'}
 			zIndex={50}
 			px={{ base: 2, xl: 12 }}
 		>
@@ -24,11 +24,11 @@ const Footer = () => {
 						alt='Icon Image'
 					/>
 				</Link>
-				<Text fontSize={{ base: 'sm', xl: 'xl' }} fontFamily={'cursive'} fontStyle={'oblique'}>
+				<Text fontSize={{ base: 'sm', xl: 'xl' }} fontFamily={'cursive'} fontStyle={'oblique'} color={'white'}>
 					Akhmedov.coder
 				</Text>
 			</Box>
-			<HStack w={'full'} alignItems={'center'} justifyContent={'end'}>
+			<HStack w={'full'} alignItems={'center'} justifyContent={'end'} color={'white'}>
 				<TbCircleLetterC />
 				<Text fontSize={{ base: '10px', xl: '15px' }} w={{ base: 'full', xl: '400px' }}>
 					Akhmedov.coder 2023 Barcha huquqlari himoyalangan.
