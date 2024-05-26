@@ -30,7 +30,7 @@ export default function ContactMe() {
 		<Box
 			w={'full'}
 			h={{ base: '80vh', xl: '89vh' }}
-			bg={'blackAlpha.800'}
+			bg={'blackAlpha.900'}
 			display={'flex'}
 			flexDirection={'column'}
 			justifyContent={'center'}
