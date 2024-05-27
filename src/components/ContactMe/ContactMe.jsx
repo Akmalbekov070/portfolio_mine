@@ -1,7 +1,7 @@
 'use client';
 import { formSchema } from '@/lib/validation';
 import { Box } from '@chakra-ui/react';
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -10,6 +10,7 @@ import { Button } from '../ui/button';
 import { Textarea } from '../ui/textarea';
 
 export default function ContactMe() {
+	const [load, setLoad] = useState(false);
 	const {
 		register,
 		handleSubmit,
@@ -24,7 +25,25 @@ export default function ContactMe() {
 	});
 
 	const onSubmit = values => {
-		console.log(values);
+		setLoad(true);
+		const telegramBotId = process.env.NEXT_PUBLIC_TELEGRAM_API;
+		const telegramBotKey = process.env.NEXT_PUBLIC_TELEGRAM_KEY_API;
+
+		fetch(`https://api.telegram.org/bot${telegramBotId}/sendMeassage`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				'content-control': 'no-cache',
+			},
+			body: JSON.stringify({
+				chat_id: telegramBotKey,
+				text: `Name: ${values.username}`,
+				email: `Phone: ${values.phone}`,
+				message: `Message: ${values.message}`,
+			}),
+		})
+			.then(() => form.reset())
+			.finally(() => setLoad(false));
 	};
 	return (
 		<Box
