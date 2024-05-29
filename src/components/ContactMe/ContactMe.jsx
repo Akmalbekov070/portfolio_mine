@@ -8,6 +8,7 @@ import { z } from 'zod';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
 import { Textarea } from '../ui/textarea';
+import { toast } from 'sonner';
 
 export default function ContactMe() {
 	const [load, setLoad] = useState(false);
@@ -37,13 +38,19 @@ export default function ContactMe() {
 			},
 			body: JSON.stringify({
 				chat_id: telegramBotKey,
-				text: `Name: ${values.username}`,
-				email: `Phone: ${values.phone}`,
-				message: `Message: ${values.message}`,
+				text: `Name: ${values.username},
+				Email: Phone: ${values.phone},
+				Message: Message: ${values.message},
+				`,
 			}),
 		})
-			.then(() => form.reset())
+			.then(() => register.reset())
 			.finally(() => setLoad(false));
+		toast.promise(pormise, {
+			loading: 'Loading...',
+			success: 'Succsesfully send',
+			error: 'wrong....',
+		});
 	};
 	return (
 		<Box
@@ -58,19 +65,25 @@ export default function ContactMe() {
 			gap={3}
 		>
 			<form onSubmit={handleSubmit(onSubmit)} className='mx-4 text-white'>
-				<Input placeholder='write your name' {...register('username')} className={'w-[400px] bg-slate-700 text-white'} />
+				<Input
+					disabled={load}
+					placeholder='write your name'
+					{...register('username')}
+					className={'w-[400px] bg-slate-700 text-white'}
+				/>
 				<div>{errors.username && <p className=' text-xl text-red-700 py-2'>{errors.username.message}</p>}</div>
 
 				<Input
 					placeholder='write your phone number'
 					{...register('phone')}
 					className={'w-[400px] bg-slate-700 my-4 text-white'}
+					disabled={load}
 				/>
 				<div>{errors.username && <p className=' text-xl text-red-700 py-2'>{errors.username.message}</p>}</div>
 				<div>
-					<Textarea {...register('message')} className={'w-[400px] bg-slate-700 text-white'} />
+					<Textarea {...register('message')} className={'w-[400px] bg-slate-700 text-white'} disabled={load} />
 					<div>{errors.username && <p className=' text-xl text-red-700 py-2'>{errors.username.message}</p>}</div>
-					<Button type='submit' className={'my-4'}>
+					<Button type='submit' disabled={load} className={'my-4'}>
 						Submit
 					</Button>
 				</div>
