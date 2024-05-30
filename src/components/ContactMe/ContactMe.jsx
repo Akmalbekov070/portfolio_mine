@@ -75,7 +75,7 @@ export default function ContactMe() {
 
 				<Input
 					placeholder='write your phone number'
-					{...register('phone')}
+					{...register}
 					className={'w-[400px] bg-slate-700 my-4 text-white'}
 					disabled={load}
 				/>
