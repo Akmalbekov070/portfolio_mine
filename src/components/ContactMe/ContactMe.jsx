@@ -30,11 +30,11 @@ export default function ContactMe() {
 		const telegramBotId = process.env.NEXT_PUBLIC_TELEGRAM_API;
 		const telegramBotKey = process.env.NEXT_PUBLIC_TELEGRAM_KEY_API;
 
-		fetch(`https://api.telegram.org/bot${telegramBotId}/sendMeassage`, {
+		const promise = fetch(`https://api.telegram.org/bot${telegramBotId}/sendMessage`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
-				'content-control': 'no-cache',
+				'Cache-Control': 'no-cache',
 			},
 			body: JSON.stringify({
 				chat_id: telegramBotKey,
@@ -44,9 +44,9 @@ export default function ContactMe() {
 				`,
 			}),
 		})
-			.then(() => register.reset())
+			.then(() => reset())
 			.finally(() => setLoad(false));
-		toast.promise(pormise, {
+		toast.promise(promise, {
 			loading: 'Loading...',
 			success: 'Succsesfully send',
 			error: 'wrong....',
@@ -75,7 +75,7 @@ export default function ContactMe() {
 
 				<Input
 					placeholder='write your phone number'
-					{...register}
+					{...register('phone')}
 					className={'w-[400px] bg-slate-700 my-4 text-white'}
 					disabled={load}
 				/>
