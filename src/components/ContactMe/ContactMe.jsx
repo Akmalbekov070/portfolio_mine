@@ -4,7 +4,6 @@ import { Box } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
 import { Textarea } from '../ui/textarea';
@@ -16,6 +15,7 @@ export default function ContactMe() {
 		register,
 		handleSubmit,
 		formState: { errors },
+		reset,
 	} = useForm({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
@@ -38,20 +38,19 @@ export default function ContactMe() {
 			},
 			body: JSON.stringify({
 				chat_id: telegramBotKey,
-				text: `Name: ${values.username},
-				Email: Phone: ${values.phone},
-				Message: Message: ${values.message},
-				`,
+				text: `Name: ${values.username},\nPhone: ${values.phone},\nMessage: ${values.message}`,
 			}),
 		})
 			.then(() => reset())
 			.finally(() => setLoad(false));
+
 		toast.promise(promise, {
 			loading: 'Loading...',
-			success: 'Succsesfully send',
-			error: 'wrong....',
+			success: 'Successfully sent',
+			error: 'Error occurred',
 		});
 	};
+
 	return (
 		<Box
 			w={'full'}
@@ -67,26 +66,31 @@ export default function ContactMe() {
 			<form onSubmit={handleSubmit(onSubmit)} className='mx-4 text-white'>
 				<Input
 					disabled={load}
-					placeholder='write your name'
+					placeholder='Write your name'
 					{...register('username')}
 					className={'w-[400px] bg-slate-700 text-white'}
 				/>
-				<div>{errors.username && <p className=' text-xl text-red-700 py-2'>{errors.username.message}</p>}</div>
+				{errors.username && <p className='text-xl text-red-700 py-2'>{errors.username.message}</p>}
 
 				<Input
-					placeholder='write your phone number'
+					placeholder='Write your phone number'
 					{...register('phone')}
 					className={'w-[400px] bg-slate-700 my-4 text-white'}
 					disabled={load}
 				/>
-				<div>{errors.username && <p className=' text-xl text-red-700 py-2'>{errors.username.message}</p>}</div>
-				<div>
-					<Textarea {...register('message')} className={'w-[400px] bg-slate-700 text-white'} disabled={load} />
-					<div>{errors.username && <p className=' text-xl text-red-700 py-2'>{errors.username.message}</p>}</div>
-					<Button type='submit' disabled={load} className={'my-4'}>
-						Submit
-					</Button>
-				</div>
+				{errors.phone && <p className='text-xl text-red-700 py-2'>{errors.phone.message}</p>}
+
+				<Textarea
+					placeholder='Write your message'
+					{...register('message')}
+					className={'w-[400px] bg-slate-700 text-white'}
+					disabled={load}
+				/>
+				{errors.message && <p className='text-xl text-red-700 py-2'>{errors.message.message}</p>}
+
+				<Button type='submit' disabled={load} className={'my-4'}>
+					Submit
+				</Button>
 			</form>
 		</Box>
 	);

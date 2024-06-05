@@ -6,6 +6,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 // import { useEffect } from 'react';
 // import Aos from 'aos';
 import { Client, HydrationProvider } from 'react-hydration-provider';
+import { Toaster } from 'sonner';
 
 export default function App({ Component, pageProps }) {
 	// useEffect(() => {

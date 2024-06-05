@@ -1,13 +1,14 @@
 import { AboutPages } from '@/components';
 import Main from '@/components/main/main';
 import MenuPage from '@/components/menu/menu';
-import { Toaster } from '@/components/ui/sonner';
 import { getAbaoutPage, getAbout, getHeaders, getHero, getPorfolio, getScill } from '@/server';
 import { Box } from '@chakra-ui/react';
+import { Toaster } from 'sonner';
 export default function Home({ header, hero, port, about, scill, AboutPage }) {
 	return (
 		<Box>
 			<MenuPage header={header} />
+			<Toaster position='top' />
 			<Box>
 				<Main hero={hero} port={port} about={about} scill={scill} />
 			</Box>
