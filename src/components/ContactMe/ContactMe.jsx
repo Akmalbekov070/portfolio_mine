@@ -121,9 +121,9 @@ export default function ContactMe() {
 							{errors.username && <p className='text-xl text-red-700 py-2'>{errors.username.message}</p>}
 							<Textarea
 								type='text'
-								className=' bg-slate-950 shadow mb-4 appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+								className=' bg-slate-950 shadow mb-4 appearance-none border rounded-lg w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline'
 								disabled={load}
-								placeholder='Phone Number'
+								placeholder='Why are you contacting me'
 								{...register('message')}
 							/>
 							{errors.username && <p className='text-xl text-red-700 py-2'>{errors.username.message}</p>}
