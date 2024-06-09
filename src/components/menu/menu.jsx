@@ -34,7 +34,7 @@ const MenuPage = () => {
 						gap={10}
 						fontWeight={'80'}
 						fontFamily={'cursive'}
-						color={'white'}
+						color={'blue.400'}
 						cursor={'pointer'}
 					>
 						{/* {header.map(item => (

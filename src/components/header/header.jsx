@@ -27,19 +27,19 @@ export default function Header(props) {
 				w={'full'}
 				h={'110vh'}
 				display={{ base: 'flex', lg: 'none' }}
-				bg={'blackAlpha.500'}
+				bg={'blackAlpha.800'}
 				position={'absolute'}
 				top={0}
 				left={0}
 			></Box>
 			<Box w={'full'} h={'100vh'} position={'absolute'} px={{ base: '10px', sm: '80px', lg: '150px', xl: '200px' }} pt={'50px'}>
-				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'}>
+				<Text color={'#09f7d3'} fontWeight={'300'} fontFamily={'cursive'}>
 					{html}
 				</Text>
-				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={4} pt={3}>
+				<Text color={'#09f7d3'} fontWeight={'300'} fontFamily={'cursive'} pl={4} pt={3}>
 					{body}
 				</Text>{' '}
-				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={10} pt={3}>
+				<Text color={'#09f7d3'} fontWeight={'300'} fontFamily={'cursive'} pl={10} pt={3}>
 					{head}
 				</Text>
 				<Text
@@ -54,29 +54,29 @@ export default function Header(props) {
 				>
 					{item.text}
 				</Text>
-				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={10} pt={2}>
+				<Text color={'#09f7d3'} fontWeight={'300'} fontFamily={'cursive'} pl={10} pt={2}>
 					{headClose}
 				</Text>{' '}
-				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={4} pt={2}>
+				<Text color={'#09f7d3'} fontWeight={'300'} fontFamily={'cursive'} pl={4} pt={2}>
 					{parag}
 				</Text>
-				<Text w={{ xl: '400px' }} color={{ base: 'white', xl: 'gray.400' }} pl={12}>
+				<Text w={{ xl: '400px' }} color={{ base: 'white', xl: 'white' }} fontFamily={'-moz-initial'} pl={12}>
 					{item.decs.slice(0, 90)}...
 				</Text>
-				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={4} pt={2}>
+				<Text color={'#09f7d3'} fontWeight={'300'} fontFamily={'cursive'} pl={4} pt={2}>
 					{paragClose}
 				</Text>
-				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={12} pt={2}>
+				<Text color={'#09f7d3'} fontWeight={'300'} fontFamily={'cursive'} pl={12} pt={2}>
 					{btn}
 				</Text>
 				<Link href={'/contactMe'}>
 					<Box ml={16} py={2}>
-						<Button bg={'transparent'} cursor={'pointer'} colorScheme={'blue'} color={'white'}>
+						<Button bg={'#09f7d3'} cursor={'pointer'} colorScheme={'blue'} color={'white'}>
 							Contact Me
 						</Button>
 					</Box>
 				</Link>
-				<Text color={'gray.500'} fontWeight={'300'} fontFamily={'cursive'} pl={12} pt={2}>
+				<Text color={'#09f7d3'} fontWeight={'300'} fontFamily={'cursive'} pl={12} pt={2}>
 					{btnClose}
 				</Text>
 			</Box>
@@ -91,7 +91,7 @@ export default function Header(props) {
 				pl={{ xl: 5 }}
 			>
 				<Box display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
-					<Text transform={'rotate(90deg)'} className='scroll'>
+					<Text transform={'rotate(90deg)'} className='scroll' color={'#09f7d3'}>
 						Scroll down
 					</Text>
 					<Text pt={14}>
@@ -99,7 +99,7 @@ export default function Header(props) {
 					</Text>
 				</Box>
 				<Box display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
-					<Text transform={'rotate(90deg)'} className='scroll'>
+					<Text transform={'rotate(90deg)'} className='scroll' color={'#09f7d3'}>
 						Scroll down
 					</Text>
 					<Text pt={14}>

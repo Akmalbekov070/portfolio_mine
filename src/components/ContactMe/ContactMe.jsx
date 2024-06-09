@@ -93,7 +93,7 @@ export default function ContactMe() {
 		// 		</Button>
 		// 	</form>
 		// </Box>
-		<div className='pt-8'>
+		<Box pt={8} px={{ base: 5, xl: 0 }}>
 			<div className='min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12 '>
 				<div className='relative py-3 sm:max-w-xl sm:mx-auto'>
 					<div className='absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl'></div>
@@ -105,7 +105,7 @@ export default function ContactMe() {
 						<form onSubmit={handleSubmit(onSubmit)}>
 							<input
 								type='text'
-								className='shadow mb-4 appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+								className='bg-slate-950  shadow mb-4 appearance-none border rounded-lg w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline'
 								disabled={load}
 								placeholder='Write your name'
 								{...register('username')}
@@ -113,7 +113,7 @@ export default function ContactMe() {
 							{errors.username && <p className='text-xl text-red-700 py-2'>{errors.username.message}</p>}{' '}
 							<input
 								type='number'
-								className='shadow mb-4 appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+								className='bg-slate-950 shadow mb-4 appearance-none border rounded-lg w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline'
 								disabled={load}
 								placeholder='Phone Number'
 								{...register('phone')}
@@ -137,6 +137,6 @@ export default function ContactMe() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</Box>
 	);
 }
