@@ -1,14 +1,19 @@
 'use client';
-import { Particle } from '@tsparticles/engine';
+import { Engine } from '@tsparticles/engine'; // Check if this import is necessary
 import { useCallback } from 'react';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
+import Particles from 'react-tsparticles'; // Ensure correct import
+import { loadFull } from 'tsparticles'; // Ensure correct import
 
-export default function ParticilBg() {
-	const particlesInit = useCallback(async engine => {
-		await loadFull(engine);
+export default function ParticleBg() {
+	const particlesInit = useCallback(async main => {
+		console.log(main); // Debug: Check what 'main' is
+		await loadFull(main);
 	}, []);
-	const particlesLoad = useCallback(async () => {}, []);
+
+	const particlesLoad = useCallback(container => {
+		console.log(container); // Debug: Check if the container is loaded correctly
+	}, []);
+
 	return (
 		<Particles
 			className='w-full h-full absolute translate-x-0 z-0'
