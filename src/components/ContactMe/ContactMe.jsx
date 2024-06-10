@@ -93,8 +93,8 @@ export default function ContactMe() {
 		// 		</Button>
 		// 	</form>
 		// </Box>
-		<Box pt={8} px={{ base: 5, xl: 0 }}>
-			<div className='min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12 '>
+		<Box pt={8}>
+			<div className='min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12 px-3'>
 				<div className='relative py-3 sm:max-w-xl sm:mx-auto'>
 					<div className='absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl'></div>
 					<div className='text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20'>

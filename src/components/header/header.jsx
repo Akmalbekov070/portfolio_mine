@@ -26,8 +26,8 @@ export default function Header(props) {
 			<Box
 				w={'full'}
 				h={'110vh'}
-				display={{ base: 'flex', lg: 'none' }}
-				bg={'blackAlpha.800'}
+				display={{ base: 'flex', lg: 'flex' }}
+				bg={'blackAlpha.700'}
 				position={'absolute'}
 				top={0}
 				left={0}
