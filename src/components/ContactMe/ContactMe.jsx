@@ -52,47 +52,6 @@ export default function ContactMe() {
 	};
 
 	return (
-		// <Box
-		// 	w={'full'}
-		// 	h={{ base: '80vh', xl: '89vh' }}
-		// 	bg={'blackAlpha.900'}
-		// 	display={'flex'}
-		// 	flexDirection={'column'}
-		// 	justifyContent={'center'}
-		// 	alignItems={'center'}
-		// 	pt={24}
-		// 	gap={3}
-		// >
-		// 	<form onSubmit={handleSubmit(onSubmit)} className='mx-4 text-white'>
-		// 		<Input
-		// 			disabled={load}
-		// 			placeholder='Write your name'
-		// 			{...register('username')}
-		// 			className={'w-[400px] bg-slate-700 text-white'}
-		// 		/>
-		// 		{errors.username && <p className='text-xl text-red-700 py-2'>{errors.username.message}</p>}
-
-		// 		<Input
-		// 			placeholder='Write your phone number'
-		// 			{...register('phone')}
-		// 			className={'w-[400px] bg-slate-700 my-4 text-white'}
-		// 			disabled={load}
-		// 		/>
-		// 		{errors.phone && <p className='text-xl text-red-700 py-2'>{errors.phone.message}</p>}
-
-		// 		<Textarea
-		// 			placeholder='Write your message'
-		// 			{...register('message')}
-		// 			className={'w-[400px] bg-slate-700 text-white'}
-		// 			disabled={load}
-		// 		/>
-		// 		{errors.message && <p className='text-xl text-red-700 py-2'>{errors.message.message}</p>}
-
-		// 		<Button type='submit' disabled={load} className={'my-4'}>
-		// 			Submit
-		// 		</Button>
-		// 	</form>
-		// </Box>
 		<Box pt={0}>
 			<div className='min-h-screen bg-gray-800 py-12 flex flex-col justify-center sm:py-16 px-3 '>
 				<div className='relative py-3 sm:max-w-xl sm:mx-auto'>
