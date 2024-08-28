@@ -95,7 +95,7 @@ export default function Header(props) {
 						Scroll down
 					</Text>
 					<Text pt={14}>
-						<PiCaretDoubleDown size={'26'} />
+						<PiCaretDoubleDown size={'26'} color='#09f7d3' />
 					</Text>
 				</Box>
 				<Box display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
@@ -103,7 +103,7 @@ export default function Header(props) {
 						Scroll down
 					</Text>
 					<Text pt={14}>
-						<PiCaretDoubleDown size={'26'} />
+						<PiCaretDoubleDown size={'26'} color='#09f7d3' />
 					</Text>
 				</Box>
 			</Box>
