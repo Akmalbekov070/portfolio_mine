@@ -40,16 +40,16 @@ const MenuPage = () => {
 						{/* {header.map(item => (
 								<Text key={item.node.id}>{item.node?.text}</Text>
 							))} */}
-						<Link href={'/'}>
+						<Link href={'/'} className='hover:text-white'>
 							<Text>Home</Text>
 						</Link>
-						<Link href={'/about'}>
+						<Link href={'/about'} className='hover:text-white'>
 							<Text>About</Text>
 						</Link>
-						<Link href={'/contact'}>
+						<Link href={'/contact'} className='hover:text-white'>
 							<Text>Contact</Text>
 						</Link>
-						<Link href={'/newspagePath'}>
+						<Link href={'/newspagePath'} className='hover:text-white'>
 							<Text>News</Text>
 						</Link>
 					</HStack>
@@ -77,7 +77,7 @@ const MenuPage = () => {
 						</Menu>
 					</Box>
 					<HStack color={'red'} pl={'20px'}>
-						<BiSolidUserCircle fontSize={'20px'} />
+						<BiSolidUserCircle fontSize={'20px'} className='hover:text-white' />
 					</HStack>
 				</Box>
 			</Box>
