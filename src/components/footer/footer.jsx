@@ -11,7 +11,7 @@ const Footer = () => {
 			display={'flex'}
 			alignItems={'center'}
 			justifyContent={'space-between'}
-			bg={'blackAlpha.800'}
+			bg={'blackAlpha.950'}
 			zIndex={50}
 			px={{ base: 2, xl: 12 }}
 		>
