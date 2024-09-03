@@ -99,7 +99,7 @@ export default function AboutPages() {
 						>
 							My Rezumen
 						</Heading>
-						<Box py={4}>
+						<Box py={4} display={{ base: 'flex', lg: 'block' }} alignItems={'center'} justifyContent={'center'}>
 							<Button>
 								<Link href={'/rezumen'}>
 									<Box>
