@@ -1,5 +1,5 @@
 import { getAbaoutPage } from '@/server';
-import { Box, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Button, Heading, Image, Link, Text } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -87,7 +87,7 @@ export default function AboutPages() {
 				</Box>
 				{/* rezumen img */}
 				<Box w={'full'} display={{ base: 'blok', xl: 'flex' }} justifyContent={'space-between'} alignItems={'center'}>
-					<Box>
+					<Box w={'full'}>
 						<Heading
 							color={'#09f7d3'}
 							fontSize={'5xl'}
@@ -99,36 +99,24 @@ export default function AboutPages() {
 						>
 							My Rezumen
 						</Heading>
-						<Box w={'full'} display={'flex'} py={5}>
-							<Image
-								w={{ base: 'full', xl: '80%' }}
-								h={'full'}
-								src='https://i.postimg.cc/4dH9Hkw6/web-developer.png'
-								alt='rezumen img'
-								objectFit={'cover'}
-							/>
-						</Box>
-					</Box>
-					<Box>
-						<Heading
-							color={'#09f7d3'}
-							fontSize={'5xl'}
-							fontFamily={'initial'}
-							position={'relative'}
-							pl={{ base: '-45px', xl: '10px' }}
-							pt={10}
-							py={5}
-						>
-							My Certificate
-						</Heading>
-						<Box w={'full'} py={5}>
-							<Image
-								w={{ base: 'full', xl: '80%' }}
-								h={'full'}
-								src='https://i.postimg.cc/ncgNqvHq/photo-2024-04-24-23-14-25.jpg'
-								alt='certification img'
-								objectFit={'cover'}
-							/>
+						<Box py={4}>
+							<Button>
+								<Link href={'/rezumen'}>
+									<Box>
+										<Button
+											w={'200px'}
+											h={'50px'}
+											bg={'#09f7d3'}
+											cursor={'pointer'}
+											fontSize={'xl'}
+											colorScheme={'blue'}
+											color={'white'}
+										>
+											Click me
+										</Button>
+									</Box>
+								</Link>
+							</Button>
 						</Box>
 					</Box>
 				</Box>
