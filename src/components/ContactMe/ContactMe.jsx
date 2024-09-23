@@ -47,7 +47,7 @@ export default function ContactMe() {
 		toast.promise(promise, {
 			loading: 'Loading...',
 			success: 'Successfully sent',
-			error: 'Error occurred',
+			errors: 'Error occurred',
 		});
 	};
 
@@ -77,7 +77,7 @@ export default function ContactMe() {
 								placeholder='Phone Number'
 								{...register('phone')}
 							/>
-							{errors.username && <p className='text-xl text-red-700 py-2'>{errors.username.message}</p>}
+							{errors.phone && <p className='text-xl text-red-700 py-2'>{errors.phone.message}</p>}
 							<Textarea
 								type='text'
 								className=' bg-slate-950 shadow mb-4 appearance-none border rounded-lg w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline'
@@ -85,7 +85,7 @@ export default function ContactMe() {
 								placeholder='Why are you contacting me'
 								{...register('message')}
 							/>
-							{errors.username && <p className='text-xl text-red-700 py-2'>{errors.username.message}</p>}
+							{errors.message && <p className='text-xl text-red-700 py-2'>{errors.message.message}</p>}
 							<input
 								type='submit'
 								className='shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'

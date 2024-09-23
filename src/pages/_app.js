@@ -21,6 +21,7 @@ export default function App({ Component, pageProps }) {
 				<Client>
 					<MenuPage />
 					<Component {...pageProps} />
+					<Toaster position='top' />
 					<Footer />
 				</Client>
 			</ChakraProvider>

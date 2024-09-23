@@ -7,7 +7,7 @@ export default function Document() {
 			<Head />
 			<body>
 				<Main />
-				<Toaster position={'top'} />
+				<Toaster position={'left'} />
 				<NextScript />
 			</body>
 		</Html>
