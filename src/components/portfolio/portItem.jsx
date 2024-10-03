@@ -38,7 +38,7 @@ export default function PortfolioItems({ param }) {
 							position={'absolute'}
 							bg={'blackAlpha.700'}
 							top={{ base: '-300px', lg: '-500px' }}
-							left={'358px'}
+							left={'338px'}
 						>
 							<Heading
 								w={'full'}
