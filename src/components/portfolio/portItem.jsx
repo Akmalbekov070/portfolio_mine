@@ -32,13 +32,13 @@ export default function PortfolioItems({ param }) {
 						/>
 						<Box
 							className='soya'
-							w={{ base: 'full', lg: '50%' }}
+							w={{ base: 'full', lg: '58%' }}
 							h={{ base: '300px', lg: '500px' }}
 							overflow={'hidden'}
 							position={'absolute'}
 							bg={'blackAlpha.700'}
 							top={{ base: '-300px', lg: '-500px' }}
-							left={'338px'}
+							left={'290px'}
 						>
 							<Heading
 								w={'full'}
