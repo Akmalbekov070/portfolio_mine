@@ -9,13 +9,16 @@ export default function PortfolioItems({ param }) {
 	}, []);
 	const scillItem = scillDetail.filter(item => item.node.text === param.name);
 	return (
-		<Box w={'full'} h={{ base: '100vh', lg: '110vh' }} bg={'black'} pt={32} px={{ base: 4, lg: 10 }}>
+		<Box w={'full'} h={{ base: '200vh', lg: '150vh' }} bg={'black'} pt={32} px={{ base: 4, lg: 10 }}>
 			{scillItem.map(item => (
 				<Box key={item.node.id} color={'white'}>
-					<HStack
+					<Box
 						position={'relative'}
 						overflow={'hidden'}
 						display={{ base: 'block', lg: 'flex' }}
+						flexDirection={'column'}
+						justifyContent={'center'}
+						alignItems={'center'}
 						className='port'
 						transition={' 1s all'}
 						gap={10}
@@ -35,7 +38,7 @@ export default function PortfolioItems({ param }) {
 							position={'absolute'}
 							bg={'blackAlpha.700'}
 							top={{ base: '-300px', lg: '-500px' }}
-							left={0}
+							left={'358px'}
 						>
 							<Heading
 								w={'full'}
@@ -53,8 +56,8 @@ export default function PortfolioItems({ param }) {
 						<Box py={6} w={{ base: 'full', lg: '40%' }}>
 							<Text fontSize={{ base: '', xl: 'xl' }}>{item.node.decs}</Text>
 						</Box>
-					</HStack>
-					<Box textAlign={'center'} pt={8}>
+					</Box>
+					<Box textAlign={'center'} pt={2}>
 						<Link href={`${item.node.nowDesc}`}>
 							<Button
 								bg={'transparent'}
